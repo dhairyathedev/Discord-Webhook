@@ -10,7 +10,11 @@ function sendMessage() {
   const params = {
     username: "Nokohashi",
     avatar_url: "",
-    content: "Lol"
+    embeds: [
+      {
+        title: "Nokomon"
+      }
+    ]
   };
 
   request.send(JSON.stringify(params));
