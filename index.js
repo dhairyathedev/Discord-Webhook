@@ -1,3 +1,8 @@
+const embedBody = document.getElementById("embed-body");
+const userName = document.getElementById("username");
+const Title = document.getElementById("title");
+const Avatar = document.getElementById("avatar");
+
 function sendMessage() {
   const request = new XMLHttpRequest();
   request.open(
@@ -8,11 +13,12 @@ function sendMessage() {
   request.setRequestHeader("Content-type", "application/json");
 
   const params = {
-    username: "Nokohashi",
-    avatar_url: "",
+    username: userName.value,
+    avatar_url: Avatar.value,
     embeds: [
       {
-        title: "Nokomon"
+        title: Title.value,
+        description: embedBody.value
       }
     ]
   };
