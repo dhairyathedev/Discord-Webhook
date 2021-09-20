@@ -2,6 +2,7 @@ const embedBody = document.getElementById("embed-body");
 const userName = document.getElementById("username");
 const Title = document.getElementById("title");
 const Avatar = document.getElementById("avatar");
+
 const webHookURL = document.getElementById("WebhookURL");
 function sendMessage() {
   const request = new XMLHttpRequest();
@@ -15,7 +16,8 @@ function sendMessage() {
     embeds: [
       {
         title: Title.value,
-        description: embedBody.value
+        description: embedBody.value,
+        color: "0"
       }
     ]
   };
