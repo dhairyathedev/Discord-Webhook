@@ -36,4 +36,3 @@ function sendMessage() {
 
   request.send(JSON.stringify(params));
 }
-// https://discord.com/api/webhooks/889714223549153310/VvwjdIWZot9EVBEuBmdnhjJ4gHKE8vHwyrJDZQj1uMcyfM1cgwZ9C1F5IdIB4KGqg6UE
