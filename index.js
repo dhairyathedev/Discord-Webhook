@@ -3,6 +3,9 @@ const userName = document.getElementById("username");
 const Title = document.getElementById("title");
 const Avatar = document.getElementById("avatar");
 const Image = document.getElementById("image");
+const footerText = document.getElementById("footer-text");
+const footerImage = document.getElementById("footer-image");
+const Timestamp = document.getElementById("date");
 
 const webHookURL = document.getElementById("WebhookURL");
 function sendMessage() {
@@ -21,7 +24,12 @@ function sendMessage() {
         color: "0",
         image: {
           url: Image.value
-        }
+        },
+        footer: {
+          text: footerText.value,
+          icon_url: footerImage.value
+        },
+        timestamp: Timestamp.value
       }
     ]
   };
