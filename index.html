@@ -82,7 +82,7 @@
   </head>
   <body>
     <div class="container">
-      <h1 align="center">SnowHook</h1>
+      <h1 class="text-center fw-bolder">SnowHook</h1>
       <p>
         (Note if message is not sent to you server than check URLs and Date you
         have entered are correct, to know more check out
@@ -111,7 +111,9 @@
       /><br /><br />
       <input type="datetime" name="" id="date" placeholder="YYYY-MM-DD hh:mm" />
       <br /><br />
-      <button onclick="sendMessage()" class="btn btn-primary">Send</button>
+      <button onclick="sendMessage()" class="btn btn-primary">
+        Send message
+      </button>
 
       <script src="index.js"></script>
       <!-- Place this tag where you want the button to render. -->
@@ -119,7 +121,8 @@
       <hr />
       <br />
       <div id="faq">
-        <h1>FAQs:</h1>
+        <h1 class="fw-bolder">FAQs:</h1>
+        <hr />
         <h3>1) Where to find Webhook URL?</h3>
         <p>
           Go to Server Settings; Find <b>Integrations</b> below
